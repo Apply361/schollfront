@@ -1,0 +1,64 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+/* Filters */
+.filters {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+input,
+select {
+  padding: 8px;
+  margin: 5px 0;
+  width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Listings */
+.listings {
+  list-style-type: none;
+  padding: 0;
+}
+
+.listing-item {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.listing-item a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.listing-item a:hover {
+  text-decoration: underline;
+}
