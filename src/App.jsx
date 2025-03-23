@@ -11,7 +11,7 @@ function App() {
   const [fetching, setFetching] = useState(false);
   const [date, setDate] = useState("");
   const [scraping, setScraping] = useState(false); // Add scraping state
-  const backendUrl = "https://backend-eluqbs2ha-dua090s-projects.vercel.app";
+  const backendUrl = "https://schollpropback.onrender.com";
 
   useEffect(() => {
     fetchListings();
