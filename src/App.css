@@ -1,64 +1,129 @@
-/* Global Styles */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+.container {
+  font-family: sans-serif;
+  padding: 20px;
 }
 
-/* Container */
-.container {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 400px;
+h1 {
   text-align: center;
 }
 
-/* Filters */
-.filters {
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightblue;
+  padding: 10px;
   margin-bottom: 20px;
 }
 
-label {
-  font-weight: bold;
-  margin-right: 5px;
+.setup-header {
+  display: flex;
+  flex-direction: column;
 }
 
-input,
-select {
-  padding: 8px;
+.scrape-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.scrape-form input,
+.scrape-form button {
   margin: 5px 0;
-  width: 90%;
-  border: 1px solid #ccc;
-  border-radius: 5px;
 }
 
-/* Listings */
+.toggle-setup {
+  background-color: #ddd;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters label {
+  display: flex;
+  align-items: center;
+}
+
+.filters input,
+.filters select {
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.data-container {
+  margin-top: 20px;
+}
+
+.date-group {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: lightblue;
+}
+
+.date-header {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
 .listings {
   list-style-type: none;
   padding: 0;
 }
 
 .listing-item {
-  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.listing-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listing-date {
+  flex: 1;
+}
+
+.listing-title {
+  flex: 2;
+  text-align: right;
+}
+
+.listing-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.listing-details {
+  margin-top: 10px;
   padding: 10px;
-  margin-bottom: 10px;
+  border: 1px solid #eee;
+  background-color: #f9f9f9;
+}
+
+.listing-details div {
+  margin-bottom: 5px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
   border: 1px solid #ddd;
-  border-radius: 5px;
+  padding: 8px;
+  text-align: left;
 }
 
-.listing-item a {
-  color: #007bff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.listing-item a:hover {
-  text-decoration: underline;
+th {
+  background-color: #f2f2f2;
 }
