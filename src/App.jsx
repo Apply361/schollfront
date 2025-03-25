@@ -11,7 +11,7 @@ function App() {
   const [scraping, setScraping] = useState(false);
   const [showSetup, setShowSetup] = useState(false);
   const [showDetails, setShowDetails] = useState({});
-  const backendUrl = "https://schollpropback.onrender.com";
+  const backendUrl = "https://schoolpropbackend.onrender.com";
 
   useEffect(() => {
     fetchListings();
